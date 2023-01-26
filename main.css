@@ -36,6 +36,7 @@
 	--fs-400: 0.875rem;
 	--fs-500: 0.955rem;
 	--fs-600: 1rem;
+	--fs-650: 1.5rem;
 	--fs-700: 2rem;
 	--fs-800: 2.5rem;
 	--fs-900: 3.5rem;
@@ -45,7 +46,7 @@
 	--fs-primary-heading: var(--fs-800);
 	--fs-secondary-heading: var(--fs-700);
 	--fs-nav: var(--fs-600);
-	--fs-button: var(--fs-300);
+	--fs-button: var(--fs-600);
 
 	/* other sizing - padding */
 	--size-100: 0.25rem;
@@ -152,6 +153,7 @@ body {
 
 p:not([class]) {
 	opacity: 0.7;
+	font-size: var(--fs-650);
 }
 
 /* button */
@@ -161,7 +163,7 @@ p:not([class]) {
 	text-decoration: none;
 	border: 0;
 	border-radius: 3px;
-	padding: 1em 1.7em;
+	padding: 2em 3em;
 	font-weight: var(--fw-bold);
 	font-size: var(--fs-button);
 	line-height: 1;
@@ -399,6 +401,58 @@ p:not([class]) {
 	}
 }
 
+/* Portfolio */
+.portfolio--content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.portfolio--content .item {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	position: relative;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.portfolio--content .item h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: all 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
+}
+
+.portfolio--content .item img {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.portfolio--content .item:hover > h3 {
+	color: #fff;
+	opacity: 1;
+}
+
+.portfolio--content .item:hover > img {
+	opacity: 0.3;
+}
+
+/* end Portfolio */
+
 /* footer */
 
 footer {
@@ -630,6 +684,15 @@ input:where([type="text"], [type="email"]) {
 .fs-600 {
 	font-size: var(--fs-600);
 }
+.fs-700 {
+	font-size: var(--fs-700);
+}
+.fs-800 {
+	font-size: var(--fs-800);
+}
+.fs-900 {
+	font-size: var(--size-900);
+}
 
 /* create the padding classes */
 .padding-block-900 {
@@ -679,4 +742,67 @@ input:where([type="text"], [type="email"]) {
 	.justify-self-end-md {
 		justify-self: end;
 	}
+}
+
+/* Contact Page */
+
+/* Styling the Form (Color, Padding, Shadow) */
+.contact {
+	/* background-color: #fff; */
+	max-width: 1100px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	/* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+h1 {
+	color: #fff;
+}
+
+/* Styling form-control Class */
+.form-control {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+        select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	padding: 10px;
+	display: block;
+	width: 95%;
+}
+
+/* Styling form-control Radio
+        button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+}
+
+/* Styling Button */
+.submit-btn {
+	color: #fff;
+	background-color: navy;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	font-size: 21px;
+	display: block;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding: 1em 2em;
 }
