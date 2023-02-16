@@ -1,371 +1,266 @@
-<html lang="en">
+<!DOCTYPE html>
+<html
+	lang="en"
+	xmlns:mso="urn:schemas-microsoft-com:office:office"
+	xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
+		<title></title>
 		<link rel="stylesheet" href="main.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--[if gte mso 9
+			]><xml>
+				<mso:CustomDocumentProperties>
+					<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+						msdt:dt="string"
+						>Clara
+						Joseph</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
+					>
+					<mso:Order msdt:dt="string">981200.000000000</mso:Order>
+					<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+					<mso:SharedWithUsers msdt:dt="string"></mso:SharedWithUsers>
+					<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+					<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+						msdt:dt="string"
+						>Clara
+						Joseph</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author
+					>
+					<mso:ContentTypeId msdt:dt="string"
+						>0x0101007AF853F3FE6B504C915F2343DFBD0DA8</mso:ContentTypeId
+					>
+					<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+					<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+					<mso:MediaLengthInSeconds msdt:dt="string"></mso:MediaLengthInSeconds>
+				</mso:CustomDocumentProperties> </xml
+		><![endif]-->
 	</head>
 	<body>
-		<!-- header section -->
-		<header class="header" id="header">
-			<nav class="navbar container">
-				<a href="index.html" class="brand">My Portfolio</a>
-				<div class="hamburger" id="hamburger">
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
-				</div>
-				<div class="menu" id="menu">
-					<ul role="list" class="menu-inner">
-						<li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">About</a></li>
-						<li class="menu-item">
-							<a href="#" class="menu-link">Services</a>
-						</li>
-						<li class="menu-item">
-							<a href="#" class="menu-link">Portfolio</a>
-						</li>
-						<li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
-						<li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
-					</ul>
-				</div>
-				<button class="button | display-sm-none">Free Consultation</button>
+		<div class="container">
+			<!-- Section 1 -->
+			<section class="section-1 center" id="section-1">
+				<h1 class="section-1-heading">Web Developer</h1>
+				<img src="./images/me.jpg" alt="Me Eric Xu" class="person-img" />
+				<h3 class="person-name">Eric Xu</h3>
+				<a href="#section-3" class="section-1-btn">Projects</a>
+			</section>
+			<!-- End of Section 1 -->
+
+			<!-- Navbar -->
+			<nav class="navbar center">
+				<a href="#section-1" class="navbar-link">Home</a>
+				<a href="#section-2" class="navbar-link">About</a>
+				<a href="#section-3" class="navbar-link">Portfolio</a>
+				<a href="#section-4" class="navbar-link">Contact</a>
 			</nav>
-		</header>
-		<!-- end header section -->
 
-		<!-- main section -->
-		<main>
-			<!-- hero -->
-			<section class="padding-block-900">
-				<div class="container">
-					<div class="even-columns">
-						<div class="flow">
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<p>Hello my name is</p>
-							</div>
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<h1 class="fs-primary-heading fw-bold">Eric Xu</h1>
-							</div>
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<p>
-									I am a student at Rutgers University.
-								</p>
-							</div>
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<button class="button">Learn More</button>
-							</div>
-						</div>
-						<div>
-							<img src="./images/webdev.jpg" alt="Picture of me" />
-						</div>
+			<!-- End of Navbar -->
+
+			<!-- Section 2 -->
+			<section class="section-2" id="section-2">
+				<h1 class="section-heading section-2-heading">About Me</h1>
+				<div class="progress-bars-wrapper">
+					<div class="progress-bar">
+						<p class="progress-text">
+							HTML
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							CSS
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							JavaScript
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							SASS
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							ReactJS
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							NodeJS
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+					<div class="progress-bar">
+						<p class="progress-text">
+							MongoDB
+							<span></span>%
+						</p>
+						<div class="progress-percent"></div>
+					</div>
+				</div>
+				<div class="services">
+					<div class="service">
+						<i class="far fa-lightbulb"></i>
+						<h2 class="service-heading">Creative</h2>
+					</div>
+					<div class="service">
+						<i class="fas fa-cut"></i>
+						<h2 class="service-heading">Problem Solving</h2>
+					</div>
+					<div class="service">
+						<i class="fas fa-tachometer-alt"></i>
+						<h2 class="service-heading">Fast</h2>
+					</div>
+					<div class="service">
+						<i class="fas fa-rocket"></i>
+						<h2 class="service-heading">Dynamic</h2>
 					</div>
 				</div>
 			</section>
-			<!-- end hero -->
+			<!-- End of Section 2 -->
 
-			<!-- services -->
-			<section class="padding-block-900">
-				<div class="container">
-					<div class="even-columns">
-						<div class="flow">
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<h2 class="fs-secondary-heading | fw-bold">What I can do</h2>
-							</div>
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<p>
-									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-									doloribus, accusamus iusto soluta eius ratione repellat harum
-									vel molestias eos omnis, tenetur veritatis vero nostrum est
-									tempora. Iste, quae cumque!
-								</p>
-							</div>
+			<!-- Section 3 -->
+			<section class="section-3" id="section-3">
+				<h1 class="section-heading section-3-heading">My Projects</h1>
+				<div class="projects-wrapper center">
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Blockchain Website</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
 						</div>
-						<div>
-							<ul class="numbered-items | flow" role="list">
-								<li>
-									<div class="flow" style="--flow-spacer: 1.5em">
-										<h3 class="fs-600 fw-bold">Web Development</h3>
-										<p>
-											Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-											Deleniti id rerum illo nostrum sit doloremque laborum,
-											sapiente aspernatur cum eos?
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="flow" style="--flow-spacer: 1.5em">
-										<h3 class="fs-600 fw-bold">Photography</h3>
-										<p>
-											Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-											Deleniti id rerum illo nostrum sit doloremque laborum,
-											sapiente aspernatur cum eos?
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="flow" style="--flow-spacer: 1.5em">
-										<h3 class="fs-600 fw-bold">Social Media Marketing</h3>
-										<p>
-											Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-											Deleniti id rerum illo nostrum sit doloremque laborum,
-											sapiente aspernatur cum eos?
-										</p>
-									</div>
-								</li>
-							</ul>
+						<img src="./images/blockchainevent.png" class="project-img" />
+						<a
+							href="./portfolio projects/Blockchain Event/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
+					</div>
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Landing Page</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
 						</div>
+						<img src="./images/landingpage.png" class="project-img" />
+						<a
+							href="./portfolio projects/My Landing Page/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
+					</div>
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Restaurant</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
+						</div>
+						<img src="./images/restaurant.png" class="project-img" />
+						<a
+							href="./portfolio projects/restaurant website/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
+					</div>
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Parallax Website</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
+						</div>
+						<img src="./images/parallax.png" class="project-img" />
+						<a
+							href="./portfolio projects/Parallax/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
+					</div>
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Concert Site</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
+						</div>
+						<img src="./images/concerts.png" class="project-img" />
+						<a
+							href="./portfolio projects/Concerts/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
+					</div>
+					<div class="project">
+						<div class="project-text">
+							<h2 class="project-name">Landing Page Form</h2>
+							<h4 class="project-technologies">HTML / CSS</h4>
+						</div>
+						<img src="./images/landingpage.png" class="project-img" />
+						<a
+							href="./portfolio projects/Contact Form/index.html"
+							class="project-link"
+							target="_blank"
+							>Visit Website</a
+						>
 					</div>
 				</div>
 			</section>
-			<!-- end services -->
+			<!-- End of Section 3 -->
 
-			<!-- about me -->
-			<div class="padding-block-900">
-				<div class="container">
-					<div class="even-columns">
-						<div>
-							<img src="./images/developing.jpg" alt="" />
-						</div>
-						<div class="flow">
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<p>About Me</p>
-							</div>
-
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<h2 class="fs-secondary-heading fw-bold">Let Me Help You</h2>
-							</div>
-
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-									veritatis doloremque adipisci magni qui, fugiat culpa ab, eos
-									rem, nisi exercitationem officia ullam quo. Nisi est alias
-									nemo fugiat ipsum!
-								</p>
-							</div>
-
-							<div class="flow" style="--flow-spacer: 1.5em">
-								<button class="button">View My Details</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- end about me -->
-
-			<!-- portfolio section-->
-			<section class="portfolio | padding-block-700">
-				<h2 class="fs-secondary-heading fw-semi-bold">Portfolio</h2>
-				<div class="container">
-					<!-- worry about these -->
-					<div class="row">
-						<div class="column">
-							<a href="#">
-								<img
-									src="https://www.geeksforgeeks.org/wp-content/uploads/html.png"
-									alt=""
-									style="width: 100%"
-								/>
-							</a>
-						</div>
-
-						<div class="column">
-							<a href="#">
-								<img
-									src="https://www.geeksforgeeks.org/wp-content/uploads/CSS.png"
-									alt=""
-									style="width: 100%"
-								/>
-							</a>
-						</div>
-
-						<div class="column">
-							<a href="#">
-								<img
-									src="https://www.geeksforgeeks.org/wp-content/uploads/php-1.png"
-									alt=""
-									style="width: 100%"
-								/>
-							</a>
-						</div>
-
-						<div class="column">
-							<a href="#">
-								<img
-									src="https://www.geeksforgeeks.org/wp-content/uploads/javascript.png"
-									alt=""
-									style="width: 100%"
-								/>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- worry about these -->
+			<!-- Section 4 -->
+			<section class="section-4" id="section-4">
+				<h1 class="section-heading section-4-heading">Contact Me</h1>
+				<form class="contact-form center">
+					<input type="text" placeholder="Name" />
+					<input type="email" placeholder="Email" />
+					<textarea placeholder="Message"></textarea>
+					<input type="submit" value="Submit" class="contact-form-btn" />
+				</form>
 			</section>
+			<!-- End of Section 4 -->
 
-			<!-- CTA -->
-			<!-- work on this more -->
-			<section
-				class="cta | padding-block-800 | bg-accent-300 | text-neutral-100"
-			>
-				<div class="container">
-					<div class="even-columns vertical-align-center">
-						<div>
-							<p class="fs-secondary-heading fw-bold">
-								Let Me Make Your Life Easier Today.
-							</p>
-						</div>
-						<div class="justify-self-end-md">
-							<button class="button | push-right" data-type="inverted">
-								Contact Now
-							</button>
-						</div>
-					</div>
+			<!-- Section 5 -->
+			<footer class="section-5 center">
+				<div class="social-media">
+					<a href="#none" class="social-media-link">
+						<i class="fab fa-github-square"></i>
+					</a>
+					<a href="#none" class="social-media-link">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="#none" class="social-media-link">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="#none" class="social-media-link">
+						<i class="fab fa-instagram-square"></i>
+					</a>
 				</div>
-			</section>
-			<!-- end CTA -->
-		</main>
-		<!-- end main section -->
+				<p class="copyright">
+					Copyright &copy; CodeAndCreate. All Rights Reserved
+				</p>
+			</footer>
+			<!-- End of Section 5 -->
+		</div>
 
-		<!-- footer section -->
-		<footer class="padding-block-700 | bg-neutral-700 | text-neutral-100">
-			<!-- same as section bg-footer -->
-			<div class="container">
-				<!-- same as container -->
-				<div class="primary-footer-wrapper">
-					<!-- same as row -->
-
-					<!-- Begin Column -->
-					<div class="primary-footer-nav">
-						<!-- same as col-lg-4 col-sm-4 col-xs-12 -->
-						<h2 class="fs-secondary-heading fw-semi-bold footer-heading">
-							Information
-						</h2>
-						<div class="footer-nav">
-							<!-- same as single_footer -->
-							<ul
-								class="footer-links flow"
-								style="--flow-spacer: 1em"
-								aria-label="footer"
-								role="list"
-							>
-								<!-- same as list-unstyled footer-link mt-4 -->
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- End Column -->
-
-					<!-- Begin Column -->
-					<div class="primary-page-links">
-						<!-- same as col-lg-4 col-sm-4 col-xs-12 -->
-						<h2 class="fs-secondary-heading fw-semi-bold footer-heading">
-							Page Links
-						</h2>
-						<div class="page-links">
-							<!-- same as single_footer -->
-							<ul
-								class="footer-links flow"
-								style="--flow-spacer: 1em"
-								aria-label="footer"
-								role="list"
-							>
-								<!-- same as list-unstyled footer-link mt-4 -->
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Lorem ipsum</a></li>
-								<li><a href="#">Lorem ipsum</a></li>
-							</ul>
-						</div>
-					</div>
-					<!-- End Column -->
-
-					<!-- Begin Column -->
-					<div class="primary-footer-footer-form">
-						<!-- same as col-lg-4 col-sm-4 col-xs-12 -->
-						<h2 class="fs-secondary-heading fw-semi-bold footer-heading">
-							Subscribe Today
-						</h2>
-						<div class="footer-form">
-							<form action="" class="form-inline">
-								<!-- same as subscribe -->
-								<input type="email" placeholder="Enter Email Address" />
-								<!-- same as subscribe__input-->
-								<button class="subscribe" type="button">
-									<i class="fa fa-paper-plane"></i>
-								</button>
-							</form>
-						</div>
-
-						<ul role="list" class="social" aria-label="social links">
-							<!-- same as social_profile -->
-							<li>
-								<a href="#" aria-label="facebook">
-									<svg class="icon">
-										<use
-											xlink:href="images/social-icons.svg#icon-facebook"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" aria-label="instagram">
-									<svg class="icon">
-										<use
-											xlink:href="images/social-icons.svg#icon-instagram"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" aria-label="twitter">
-									<svg class="icon">
-										<use
-											xlink:href="images/social-icons.svg#icon-twitter"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" aria-label="pinterest">
-									<svg class="icon">
-										<use
-											xlink:href="images/social-icons.svg#icon-pinterest"
-										></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="#" aria-label="youtube">
-									<svg class="icon">
-										<use
-											xlink:href="images/social-icons.svg#icon-youtube"
-										></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!-- End Column -->
-				</div>
-				<div class="primary-footer-wrapper">
-					<p>Copright&copy 2023. All Rights Reserved.</p>
-				</div>
-			</div>
-		</footer>
-		<!-- end footer section -->
+		<script src="script.js"></script>
 	</body>
-	<script src="app.js"></script>
 </html>
