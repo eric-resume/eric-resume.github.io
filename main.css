@@ -352,7 +352,7 @@ html {
 	margin: 0.5rem 0;
 	background-color: #eef;
 	font-size: 1.5rem;
-	border: 0.2rem solid #e41c6f;
+	border: 0.2rem solid #000000;
 	color: #555;
 }
 
@@ -363,7 +363,7 @@ html {
 }
 
 .contact-form .contact-form-btn {
-	background-color: #e41c6f;
+	background-color: #000000;
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
@@ -386,7 +386,7 @@ html {
 .social-media-link {
 	margin: 0 2rem;
 	padding: 0.7rem;
-	background-color: #e41c6f;
+	background-color: #000000;
 	border-radius: 0.5rem;
 	display: inline-block;
 }
