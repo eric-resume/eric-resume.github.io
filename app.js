@@ -1,27 +1,41 @@
-const navbarMenu = document.getElementById("menu");
-const hamburger = document.getElementById("hamburger");
-const headerMenu = document.getElementById("header");
-
-// Open Navbar menu on Click
-if (hamburger && navbarMenu) {
-	hamburger.addEventListener("click", () => {
-		hamburger.classList.toggle("active");
-		navbarMenu.classList.toggle("active");
-	});
-}
-
-// Close Navbar Menu on Click
-document.querySelectorAll(".menu-link").forEach((link) => {
-	link.addEventListener("click", () => {
-		hamburger.classList.remove("active");
-		navbarMenu.classList.remove("active");
-	});
-});
+const navbar = document.querySelector(".navbar");
+const navbarOffsetTop = navbar.offsetTop;
+const sections = document.querySelectorAll("section");
+const navbarLinks = document.querySelectorAll(".navbar-link");
+const progress = document.querySelector(".progress-bars-wrapper");
+const progressBarPercents = [98, 90, 75, 45, 51, 47, 59, 49, 43, 41];
 
 window.addEventListener("scroll", () => {
-	if (this.scrollY >= 85) {
-		headerMenu.classList.add("on-scroll");
-	} else {
-		headerMenu.classList.remove("on-scroll");
-	}
+  mainFn();
+});
+
+const mainFn = () => {
+  if (window.pageYOffset >= navbarOffsetTop) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+
+  sections.forEach((section, i) => {
+    if (window.pageYOffset >= section.offsetTop - 10) {
+      navbarLinks.forEach((navbarLink) => {
+        navbarLink.classList.remove("change");
+      });
+      navbarLinks[i].classList.add("change");
+    }
+  });
+
+  if (window.pageYOffset + window.innerHeight >= progress.offsetTop) {
+    document.querySelectorAll(".progress-percent").forEach((el, i) => {
+      el.style.width = `${progressBarPercents[i]}%`;
+      el.previousElementSibling.firstElementChild.textContent =
+        progressBarPercents[i];
+    });
+  }
+};
+
+mainFn();
+
+window.addEventListener("resize", () => {
+  window.location.reload();
 });
